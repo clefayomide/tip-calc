@@ -12,7 +12,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://clefayomide.github.io/tip-calc/)
+- [solution URL](https://your-solution-url.com)
+- [live site URL](https://clefayomide.github.io/tip-calc/)
 
 ## My process
 
@@ -56,6 +55,8 @@ if(e.target.value.includes("%")){
   e.target.value.slice(0,-1)
 }
 ```
+The ```includes("%")``` checks for % substring, if found in the users input, the ```slice(0,-1)``` then removes the substring at the last index. 
+
 ## Author
 
 - Frontend Mentor - [@clefayomide](https://www.frontendmentor.io/profile/clefayomide)
