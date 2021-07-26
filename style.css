@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .img-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .main {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100vh;
+    margin-top: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .bill-container {
+    position: relative;
+  }
+
+  label,
+  input {
+    display: block;
+  }
+
+  label {
+    color:hsl(183, 100%, 15%);
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+
+  input {
+    width: 320px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    outline: none;
+    border: hsl(189, 41%, 97%);
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-family: "Space Mono", monospace;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+  }
+
+  input:focus{
+    border: 3px solid hsl(172, 67%, 45%);
+  }
+
+  .btn {
+    width: 145px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    background-color: hsl(183, 100%, 15%);
+    border: hsl(183, 100%, 15%);
+    font-family: "Space Mono", monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+  }
+
+  .active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  .custom {
+    width: 145px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 25px;
+    
+  }
+
+  .five,
+  .fifteen,
+  .fifty {
+    margin-left: 25px;
+  }
+
+  .ten,
+  .twenty-five {
+    margin-right: 25px;
+  }
+
+  .five,
+  .ten {
+    margin-top: 15px;
+  }
+
+  .fifteen,
+  .twenty-five,
+  .fifty,
+  .custom {
+    margin-top: 10px;
+  }
+
+  .dollar-icon {
+    position: absolute;
+    top: 81px;
+    left: 40px;
+  }
+
+  .btn-custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .num-of-people {
+    position: relative;
+  }
+
+  .persons {
+    position: absolute;
+    top: 82px;
+    left: 40px;
+  }
+
+  .total {
+    width: 320px;
+    margin-left: 25px;
+    margin-top: 30px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10px;
+  }
+
+  .tip-amount,
+  .total-amount {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .tip-text,
+  .total-text {
+      font-size: smaller;
+      font-weight: bold;
+      color: hsl(0, 0%, 100%);
+  }
+
+  .tip-num,
+  .total-num {
+      font-size: 24px;
+      font-weight: 700;
+      color: hsl(172, 67%, 45%);
+  }
+
+  span {
+      font-size: x-small;
+      color: hsl(185, 41%, 84%);
+  }
+
+  .resetBtn {
+      width: 290px;
+      height: 40px;
+      margin-left: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Space Mono", monospace;
+      background-color: hsl(172, 67%, 45%);
+      color: hsl(183, 100%, 15%);
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .resetBtn:hover {
+    background-color: hsl(185, 41%, 84%);
+  }
+
+  .attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media (min-width: 1200px){
+    .main {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      height: 460px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    .flexed {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .btn-custom-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+    }
+
+    .ten,
+    .twenty-five,
+    .custom {
+      margin-right: 50px;
+    }
+
+    .total {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 25px;
+      height: 400px;
+    }
+
+    .total-flexed {
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .resetBtn {
+      margin-bottom: 30px;
+    }
+
+    .attribution {
+      top: 600px;
+    }
+  }
+
+  @media (max-width: 360px){
+    input {
+      width: 310px;
+    }
+
+    .total {
+      width: 310px;
+    }
+  }
