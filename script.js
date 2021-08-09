@@ -1,4 +1,3 @@
-let btnCustomContainer = document.querySelector('.btn-custom-container').querySelectorAll('.btn')
 let fiveBtn = document.querySelector('.five')
 let tenBtn = document.querySelector('.ten')
 let fifteenBtn = document.querySelector('.fifteen')
@@ -31,7 +30,7 @@ function fiveClick(){
         let tip = 5
         let result = (tip / 100) * bill.value / numOfPersons.value
         tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
         let totalBillPP = (bill.value / numOfPersons.value) + result
         totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
     }
@@ -49,7 +48,7 @@ function tenClick(){
         let tip = 10
         let result = (tip / 100) * bill.value / numOfPersons.value
         tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
         let totalBillPP = (bill.value / numOfPersons.value) + result
         totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
     }
@@ -67,7 +66,7 @@ function fifteenClick(){
         let tip = 15
         let result = (tip / 100) * bill.value / numOfPersons.value
         tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
         let totalBillPP = (bill.value / numOfPersons.value) + result
         totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
     }
@@ -85,7 +84,7 @@ function twentyFiveClick(){
         let tip = 25
         let result = (tip / 100) * bill.value / numOfPersons.value
         tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
         let totalBillPP = (bill.value / numOfPersons.value) + result
         totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
     }
@@ -97,13 +96,13 @@ function fiftyClick(){
     fifteenBtn.classList.remove("active")
     twentyFiveBtn.classList.remove("active")
     fiftyBtn.classList.add("active")
-    
+
     if(bill.value && numOfPersons.value === ""){
     }else{
         let tip = 50
         let result = (tip / 100) * bill.value / numOfPersons.value
         tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
         let totalBillPP = (bill.value / numOfPersons.value) + result
         totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
     }
@@ -117,7 +116,7 @@ function customClick(e){
     fiveBtn.classList.remove("active")
 
     if(bill.value && numOfPersons.value === ""){
-        
+
     }else{
         if(e.target.value.includes("%")){
             let tip = e.target.value.slice(0, -1)
@@ -129,7 +128,7 @@ function customClick(e){
             let tip = e.target.value
             let result = (tip / 100) * bill.value / numOfPersons.value
             tipNum.innerHTML = `$${result.toFixed(2)}`
-        
+
             let totalBillPP = (bill.value / numOfPersons.value) + result
             totalNum.innerHTML = `$${totalBillPP.toFixed(2)}`
         }

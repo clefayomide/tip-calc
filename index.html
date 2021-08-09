@@ -24,25 +24,25 @@
           <div class="left">
             <div class="bill-container">
               <label for="bill">Bill</label>
-              <input type="number" name="bill" class="bill" id="bill-input" required/>
+              <input type="number" name="bill" class="bill" id="bill" required/>
               <img src="tip-calculator-app/images/icon-dollar.svg" alt="dollar icon" class="dollar-icon"/>
             </div>
     
             <div class="select-tip-container">
               <label for="select-tip">Select Tip %</label>
               <div class="btn-custom-container">
-                <button class="btn five">5%</button>
-                <button class="btn ten">10%</button>
-                <button class="btn fifteen">15%</button>
-                <button class="btn twenty-five">25%</button>
-                <button class="btn fifty">50%</button>
-                <input type="text" placeholder="Custom" class="custom" required/>
+                <button class="btn five" type="button">5%</button>
+                <button class="btn ten" type="button">10%</button>
+                <button class="btn fifteen" type="button">15%</button>
+                <button class="btn twenty-five" type="button">25%</button>
+                <button class="btn fifty" type="button">50%</button>
+                <input type="text" placeholder="Custom" class="custom" id="select-tip" required/>
               </div>
             </div>
     
             <div class="num-of-people">
               <label for="persons">Number of People</label>
-              <input type="number" name="persons" class="num-of-persons" required/>
+              <input type="number" name="persons" class="num-of-persons" id="persons" required/>
               <img src="tip-calculator-app/images/icon-person.svg" alt="persons icon" class="persons"/>
             </div>
           </div>
@@ -61,7 +61,7 @@
                 </div>
               </div>
     
-              <button class="resetBtn">RESET</button>
+              <button class="resetBtn" type="button">RESET</button>
             </div>
           </div>
         </div>
